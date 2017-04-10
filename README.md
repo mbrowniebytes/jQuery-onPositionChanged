@@ -7,11 +7,11 @@ usage and options
 ========
 ````
 var options = {
-	interval: 250,						// how often to check, in ms
-	changed: function(changed) {		// triggered when position or offset changed
-		// changed = {changed:'offset'|'position', lastOff:lastOff, newOff:newOff, lastPos:lastPos, newPos:newPos}
-		console.log(changed);
-	}
+    interval: 250,                     // how often to check, in ms
+    changed: function(changed) {       // triggered when position or offset changed
+        // changed = {changed:'offset'|'position', lastOff:lastOff, newOff:newOff, lastPos:lastPos, newPos:newPos}
+        console.log(changed);
+    }
 };
 
 $('#dom').onPositionChanged(options);
